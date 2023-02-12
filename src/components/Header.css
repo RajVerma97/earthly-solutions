@@ -1,0 +1,128 @@
+.header{
+    /* border:2px solid red; */
+    height:12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--darkblue);
+    /* margin-bottom:3em; */
+}
+
+.navbar{
+    width:90%;
+    /* border:2px solid blue; */
+ 
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+   
+
+}
+.logo{
+    text-transform: capitalize; 
+    font-size:1.8em;
+    font-weight:400;
+    color: var(--white);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.logo::after{
+content: '';
+border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color:  var(--white);    
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+}
+.logo:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.list{
+    display: flex;
+
+}
+.item{
+    margin-right: 1em;
+    list-style: none;
+}
+.item__link{
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+
+.item__link::after {
+    content: '';
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+}
+
+.item__link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* .sidemenu{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:var(--darkblue);
+    z-index: 100;
+    position:fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding:3em;
+
+
+} */
+.sidemenu__item{
+list-style: none;
+    margin-bottom: 2em;
+} 
+.sidemenu__link{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size:2em;
+}
+
+
+@media (max-width:768px){
+    .header {
+            /* border:2px solid red; */
+            height: 8vh;
+            /* margin-bottom:3em; */
+        }
+        .logo {
+            font-size: 1.3em;
+        }
+           .list {
+               display: none;
+    
+           }
+             
+               
+}

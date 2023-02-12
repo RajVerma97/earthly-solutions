@@ -1,0 +1,116 @@
+.arrowContainer{
+    margin: 1em auto;
+        width: 90%;
+}
+.showcase{
+    background-color: var(--lightblue);
+    padding:3em;
+    display: flex;
+    margin:0em auto;
+    width:75%;
+    margin-bottom: 3em;
+ 
+    
+}
+.showcase__left{
+    width:40%;
+    /* height:70vh; */
+    margin-right:2em;
+}
+.product__image {
+    width: 100%;
+    height: 100%;
+
+}
+.showcase__right{
+    /* border:2px solid red; */
+    text-align: left;
+    padding:1em;
+}
+.product__name{
+    font-size:2em;
+    font-weight:700;
+    text-align: left;
+    color:var(--darkblue);
+    margin-bottom: 0.5em;
+}
+.product__price{
+    font-size: 2em;
+        font-weight: 800;
+        text-align: left;
+        color: var(--orange);
+        margin-bottom: 2em;
+}
+
+.info{
+    background-color: var(--darkblue);
+    margin:0 auto;
+    width:75%;
+    padding:3em;
+    margin-bottom: 3em;
+}
+
+.description{
+    margin-bottom: 3em;
+}
+
+.description__title,.features__title{
+    font-size:2em;
+    font-weight:500;
+    color: white;
+    text-transform: capitalize;
+
+}
+
+
+.description__lead{
+    font-size:1.2em;
+    color:white;
+    margin-top:1em;
+}
+.features__title{
+    margin-bottom: 0.5em;
+}
+.features__item{
+    list-style: none;
+    font-size: 1.2em;
+    color: orange;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    padding-left:1em;
+}
+.features__item span{
+    margin-left:0.7em;
+    color:white
+}
+
+@media (max-width:768px){
+    .showcase {
+            background-color: var(--lightblue);
+            padding: 1.3em;
+            display: block;
+            width: 90%;
+            margin-bottom: 3em;
+    
+    
+        }
+    .showcase__left {
+        width: 100%;
+        margin-right: 2em;
+    }
+    .info {
+        background-color: var(--darkblue);
+        margin: 0 auto;
+        width: 90%;
+        padding: 3em;
+        margin-bottom: 3em;
+    }
+        .product__price {
+            font-size: 2em;
+            font-weight: 800;
+            text-align: left;
+            color: var(--orange);
+            margin-bottom: 1em;
+        }
+}

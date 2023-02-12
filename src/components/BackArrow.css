@@ -1,0 +1,10 @@
+ .arrow {
+     color: black;
+     font-size: 2em;
+    
+ }
+ .arrow:hover{
+   
+      color:var(--grey);
+      transform:scale(1.2);
+ }
